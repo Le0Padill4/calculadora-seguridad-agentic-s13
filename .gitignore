@@ -1,1 +1,6 @@
 .env
+*.log
+verificacion_simulada.json
+__pycache__/
+.venv/
+evidencias_privadas/
