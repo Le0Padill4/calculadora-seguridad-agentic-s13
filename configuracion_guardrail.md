@@ -1,0 +1,5 @@
+# Configuración del guardrail
+
+El control didáctico está en `.claude/hooks/proteger_env.py`. Recibe eventos JSON con `tool_name` y `tool_input`, y devuelve 2 cuando detecta `.env` o `verificar_entorno.py`; devuelve 0 en los demás casos. El banco del profesor simuló lecturas, edición y comandos de Bash y PowerShell.
+
+La configuración del docente es para Claude Code. Este trabajo se realizó con Codex; no se ha verificado que Codex cargue ese hook ni se afirma que haya interceptado herramientas reales. La prueba independiente del script no demuestra su instalación en un agente. Queda pendiente comprobar un control compatible con el agente y repetir las pruebas con él activo.
